@@ -1,27 +1,47 @@
 .App {
   text-align: center;
-  background-color: #808080;
+  background-color: #c637d996;
   height: 100vh;
 }
-.App h1{
+.App h1 {
   text-transform: uppercase;
   padding: 40px 0;
+  text-shadow: 2px 4px 5px #008000;
+  animation: salto;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes salto {
+  0% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  0% {
+    transform: translateY(0px);
+  }
 }
 
 .App .container {
   position: relative;
   max-height: 600px;
   height: 500px;
+  border-radius: 8px;
 }
 .App .container .item1 {
   width: 100%;
   height: 100%;
   transition: all 0.5s;
+  box-shadow: 4px 6px 8px #010101;
+  border-radius: 8px;
 }
 .App .container .item1 .leo1 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 8px;
 }
 .App .container .item1 span {
   position: absolute;
@@ -43,11 +63,14 @@
   justify-content: center;
   width: 100%;
   height: 100%;
+  box-shadow: 4px 6px 8px #010101;
+  border-radius: 8px;
 }
 .App .container .item2 .leo2 {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  border-radius: 8px;
 }
 .App .container .item2 span {
   position: absolute;
